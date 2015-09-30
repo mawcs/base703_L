@@ -3,43 +3,106 @@ Description: This is a stylesheet containing styling for mobile devices.
 Author: Obox Themes
 Author URI: http://www.oboxthemes.com/
 */
-
 /*--------------------------------------------------------------*/
-/*- SMALL SCREENS ----------------------------------------------*/
+/*- EVERYTHING BIGGER THAN A PHONE -----------------------------*/
+/*--------------------------------------------------------------*/
+@media only screen and (min-width: 320px){
+
+    /*---------------------------*/
+    /*- COLUMNS -----------------*/
+    .column{
+        float: left;
+        margin-right: 1.6%;
+    }
+    .column-flush{
+        float: left;
+    }
+		
+	.column.last {
+		margin-right: 0px;
+	}
+	.column.last + .column {clear: both;}
+	
+    /*---------------------------*/
+    /*- HEADERS -----------------*/
+    .header-secondary{
+        display: block;
+    }
+
+    /*---------------------------*/
+    /*- MEDIA BLOCK -------------*/
+
+        /*-----------------------*/
+        /*- IMAGE LEFT / RIGHT --*/
+        .image-left .media-image{
+            float: left;
+            max-width: 49%;
+            margin-right: 20px;
+        }
+        .image-right .media-image{
+            float: right;
+            max-width: 49%;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .image-left .media-body,
+        .image-right .media-body{
+            margin-top: 0;
+        }
+
+            /*-------------------*/
+            /*- CORRECT WIDTHS --*/
+            .span-3 .image-left .media-image,
+            .span-4 .image-left .media-image{
+                max-width: 33%;
+            }
+            .span-3 .image-right .media-image,
+            .span-4 .image-right .media-image{
+                max-width: 33%;
+            }
+
+}
+/*--------------------------------------------------------------*/
+/*- Portrait ---------------------------------------------------*/
+/* old models, iPhone 5, iPhone6/6plump, Android
 /*--------------------------------------------------------------*/
 @media only screen and (max-width: 480px){
 
 /*-------------------------------*/
 /*- COLUMNS ---------------------*/
 
-
+ 	/*---------------------------*/
+    /*- COLUMN WIDTHS -----------*/
+    .span-1{width: 100%;}
+    .span-2{width: 100%;}
+    .span-3{width: 100%;}
+    .span-4{width: 100%;}
+    .span-5{width: 100%;}
+    .span-6{width: 100%;}
+	.span-7{width: 100%;}
+    .span-8{width: 100%;}
+    .span-9{width: 100%;}
+    .span-10{width: 100%;}
+    .span-11{width: 100%;}
+    .span-12{
+		width: 100%;
+        clear: both;
+        float: none;
+    }   
     /*---------------------------*/
-    /*- SPAN - 1 ----------------*/
-    .column.span-1{
-        float: left;
-        width: 14.7%;
-        margin-right: 2%;
-    }
-    .column-flush.span-1{
-        float: left;
-        width: 16.6667%;;
-    }
-
-
-    /*---------------------------*/
-    /*- SPAN - 2 ----------------*/
-    .column.span-2{
-        float: left;
-        width: 48%;
-        margin-right: 4%;
-    }
-    .column-flush.span-2{
-        float: left;
-        width: 50%;
-        margin-right: 0%;
-    }
-
-	.column.last{margin-right: 0;}
+    /*- FLUSH COLUMNS -----------*/
+    .column-flush.span-1{width: 100%;}
+    .column-flush.span-2{width: 100%;}
+    .column-flush.span-3{width: 100%;}
+	.column-flush.span-4{width: 100%;}
+    .column-flush.span-5{width: 100%;}
+	.column-flush.span-6{width: 100%;}
+    .column-flush.span-7{width: 100%;}
+    .column-flush.span-8{width: 100%;}
+    .column-flush.span-9{width: 100%;}
+    .column-flush.span-10{width: 100%;}
+    .column-flush.span-11{width: 100%;}
+    .column-flush.span-12{width: 100%;}
 
     /*---------------------------*/
     /*- MASONRY -----------------*/
@@ -195,91 +258,45 @@ Author URI: http://www.oboxthemes.com/
 }
 
 /*--------------------------------------------------------------*/
-/*- EVERYTHING BIGGER THAN A PHONE -----------------------------*/
-/*--------------------------------------------------------------*/
-@media only screen and (min-width: 320px){
-
-    /*---------------------------*/
-    /*- COLUMNS -----------------*/
-    .column{
-        float: left;
-        margin-right: 2%;
-    }
-    .column-flush{
-        float: left;
-    }
-
-
-    /*---------------------------*/
-    /*- SPAN - 4 ----------------*/
-    .column.span-4{
-        float: left;
-        width: 32%;
-        margin-right: 2%;
-    }
-    .column-flush.span-4{
-        float: left;
-        width: 33.33333%;
-    } 
-
-    /*---------------------------*/
-    /*- SPAN - 6 ----------------*/
-    .column.span-6{
-        width: 49%;
-        margin-right: 2%;
-    }
-    .column-flush.span-6{
-        width: 50%;
-    }
-	
-	.column.last {
-		margin-right: 0px;
-	}  
-
-    /*---------------------------*/
-    /*- HEADERS -----------------*/
-    .header-secondary{
-        display: block;
-    }
-
-    /*---------------------------*/
-    /*- MEDIA BLOCK -------------*/
-
-        /*-----------------------*/
-        /*- IMAGE LEFT / RIGHT --*/
-        .image-left .media-image{
-            float: left;
-            max-width: 49%;
-            margin-right: 20px;
-        }
-        .image-right .media-image{
-            float: right;
-            max-width: 49%;
-            margin-right: 0;
-            margin-left: 20px;
-        }
-        .image-left .media-body,
-        .image-right .media-body{
-            margin-top: 0;
-        }
-
-            /*-------------------*/
-            /*- CORRECT WIDTHS --*/
-            .span-3 .image-left .media-image,
-            .span-4 .image-left .media-image{
-                max-width: 33%;
-            }
-            .span-3 .image-right .media-image,
-            .span-4 .image-right .media-image{
-                max-width: 33%;
-            }
-
-}
-
-/*--------------------------------------------------------------*/
 /*-  MOBILE LANDSCAPE MODES ------------------------------------*/
 /*--------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: 667px){
+@media only screen and (min-width: 481px) and (max-width: 736px){
+
+/*-------------------------------*/
+/*- COLUMNS ---------------------*/
+
+ 	/*---------------------------*/
+    /*- COLUMN WIDTHS -----------*/
+    .span-1{width: 15%;}
+    .span-2{width: 15%;}
+    .span-3{width: 23.3%;}
+    .span-4{width: 32.2%;}
+    .span-5{width: 49.2%;}
+    .span-6{width: 49.2%;}
+	.span-7{width: 49.2%;}
+    .span-8{width: 66.1%;}
+    .span-9{width: 74%;}
+    .span-10{width: 83%;}
+    .span-11{width: 83%;}
+    .span-12{
+		width: 100%;
+        clear: both;
+        float: none;
+    }   
+    /*---------------------------*/
+    /*- FLUSH COLUMNS -----------*/
+    .column-flush.span-1{width: 16.6%;}
+    .column-flush.span-2{width: 16.6%;}
+    .column-flush.span-3{width: 25%;}
+	.column-flush.span-4{width: 33.3%;}
+    .column-flush.span-5{width: 50%;}
+	.column-flush.span-6{width: 50%;}
+    .column-flush.span-7{width: 50%;}
+    .column-flush.span-8{width: 66.6%;}
+    .column-flush.span-9{width: 75%;}
+    .column-flush.span-10{width: 83.3%;}
+    .column-flush.span-11{width: 83.3%;}
+    .column-flush.span-12{width: 100%;}
 
     /*---------------------------*/
     /*- MEDIA BLOCK -------------*/
@@ -309,7 +326,13 @@ Author URI: http://www.oboxthemes.com/
 /*--------------------------------------------------------------*/
 /*-  AWKWARD SIZE BETWEEN PHONE LANDSCAPE AND TABS -------------*/
 /*--------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: 768px){
+@media only screen and (min-width: 737px) and (max-width: 767px){
+	
+	 /*-----------------------*/
+    /*- HEADER IN ADMIN MODE */
+    .admin-bar .header-sticky.is_stuck.is_stuck_show{
+        margin-top: 46px;
+    }
 
     /*---------------------------*/
     /*- SPAN - 2 ----------------*/
@@ -382,22 +405,9 @@ Author URI: http://www.oboxthemes.com/
 }
 
 /*--------------------------------------------------------------*/
-/*-  AWKWARD SIZE BETWEEN PHONE LANDSCAPE AND TABS -------------*/
-/*--------------------------------------------------------------*/
-@media only screen and (min-width: 568px) and (max-width: 782px){
-
-    /*-----------------------*/
-    /*- HEADER IN ADMIN MODE */
-    .admin-bar .header-sticky.is_stuck.is_stuck_show{
-        margin-top: 46px;
-    }
-
-}
-
-/*--------------------------------------------------------------*/
 /*- EVERYTHING UP TO TABLET ------------------------------------*/
 /*--------------------------------------------------------------*/
-@media only screen and (max-width: 736px){
+@media only screen and (max-width: 767px){
 
     .header-inline .inline-right-nav{
         float: right;
@@ -448,78 +458,76 @@ Author URI: http://www.oboxthemes.com/
 }
 
 
-@media only screen and (min-width: 568px) and (max-width: 860px){
+@media only screen and (min-width: 768px) and (max-width: 860px){
 
     /*---------------------------*/
-    /*- SPAN - 5 ----------------*/
-    .column.span-5{
-        width: 49%;
-        margin-right: 2%;
-    }
-    .column-flush.span-5{
-        width: 50%;
-    }
-    .column.span-5 + .span-5{
-        margin-right: 0;
-    }
-
+    /*- COLUMN WIDTHS -----------*/
+    .span-1{width: 15%;}
+    .span-2{width: 15%;}
+    .span-3{width: 23.3%;}
+    .span-4{width: 32.2%;}
+    .span-5{width: 49.2%;}
+    .span-6{width: 49.2%;}
+	.span-7{width: 49.2%;}
+    .span-8{width: 66.1%;}
+    .span-9{width: 74%;}
+    .span-10{width: 83%;}
+    .span-11{width: 83%;}
+    .span-12{
+		width: 100%;
+        clear: both;
+        float: none;
+    }   
     /*---------------------------*/
-    /*- SPAN - 10 ---------------*/
-    .column.span-10,
-    .column-flush.span-10{
-        width: 100%;
-        margin-right: 0;
-    }
-
-    /*---------------------------*/
-    /*- COMBINATIONS ------------*/
-    .column.span-5 + .span-5 + .span-2{
-        width: 100%;
-    }
-
-    .column.span-7 + .span-5{
-        width: 40.5%;
-    }
-    .column-flush.span-7 + .span-5{
-        width: 41.66665%;
-    }
-
-    .column.span-10 + .span-2{
-        width: 49%;
-    }
+    /*- FLUSH COLUMNS -----------*/
+    .column-flush.span-1{width: 16.6%;}
+    .column-flush.span-2{width: 16.6%;}
+    .column-flush.span-3{width: 25%;}
+	.column-flush.span-4{width: 33.3%;}
+    .column-flush.span-5{width: 50%;}
+	.column-flush.span-6{width: 50%;}
+    .column-flush.span-7{width: 50%;}
+    .column-flush.span-8{width: 66.6%;}
+    .column-flush.span-9{width: 75%;}
+    .column-flush.span-10{width: 83.3%;}
+    .column-flush.span-11{width: 83.3%;}
+    .column-flush.span-12{width: 100%;}
 }
 
 /*--------------------------------------------------------------*/
 /*- EVERYTHING BIGGER THAN TABLETS -----------------------------*/
 /*--------------------------------------------------------------*/
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 1024px) {
 
 /*-------------------------------*/
 /*- GRIDS -----------------------*/
 
     /*---------------------------*/
     /*- COLUMN WIDTHS -----------*/
-    .span-1{width: 6.5%;}
-    .span-2{width: 15%;}
-    .span-3{width: 23.5%;}
-    .span-4{width: 33.33333%;}
-    .span-5{width: 40.5%;}
-    .span-7{width: 57.5%;}
-    .span-8{width: 66%;}
-    .span-9{width: 74.5%;}
+    .span-1{width: 6.8%;}
+    .span-2{width: 15.3%;}
+    .span-3{width: 23.8%;}
+    .span-4{width: 32.2%;}
+    .span-5{width: 40.7%;}
+    .span-6{width: 49.2%;}
+	.span-7{width: 57.6%;}
+    .span-8{width: 66.1%;}
+    .span-9{width: 74.6%;}
     .span-10{width: 83%;}
     .span-11{width: 91.5%;}
     .span-12{
         clear: both;
         float: none;
-    }
+    }   
 
     /*---------------------------*/
     /*- FLUSH COLUMNS -----------*/
     .column-flush.span-1{width: 8.333333%;}
     .column-flush.span-2{width: 16.6667%;}
     .column-flush.span-3{width: 25%;}
+	.column-flush.span-4{width: 33.33333%;}
     .column-flush.span-5{width: 41.66665%;}
+	.column-flush.span-6{width: 50%;}
     .column-flush.span-7{width: 58.1%;}
     .column-flush.span-8{width: 66.65%;}
     .column-flush.span-9{width: 74.7%;}
@@ -852,14 +860,4 @@ Author URI: http://www.oboxthemes.com/
         visibility: visible;
         left: -140px;
     }
-}
-
-@media only screen and (max-width: 480px), screen and (max-device-width: 480px), screen and (max-width: 600px) {
-
-    /*---------------------------*/
-    /*- BACK TO TOP -------------*/
-    #back-to-top{
-        display: none;
-    }
-
 }
