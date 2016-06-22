@@ -36,7 +36,7 @@
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><span></span></button>
-				<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+				<?php wp_nav_menu( array( 'theme_location' => 'header', 'menu_id' => 'header-menu' ) ); ?>
 			</nav><!-- #site-navigation -->
 
 			<div class="site-branding"><!--TODO Fix the z-index issue-->
@@ -57,17 +57,65 @@
 	<section id="hero" class="wow">
 		<div class="hero-content">
 			<div class="call-to-action-block">
-HI!
+				<div id="lipsum">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
+					</p>
+					<p>
+						Nulla id semper ipsum. Duis aliquet dignissim feugiat. Maecenas tempor est urna, in posuere mi cursus a. Cras non orci vitae lorem sagittis cursus nec eget odio. Etiam tincidunt pharetra ultricies. Nam consequat suscipit est, placerat lobortis leo consequat eget. Vestibulum nisi urna, aliquam eu vulputate ut, congue nec sapien. Curabitur viverra sodales tellus in sollicitudin. Curabitur ornare urna id turpis aliquet, ac aliquam risus venenatis. In nec ullamcorper enim, vel iaculis ex. Duis eu tortor vitae nulla fermentum laoreet. Suspendisse dolor urna, posuere vitae arcu eu, blandit tempus nisl. Ut sed consectetur velit, non pharetra orci.
+					</p>
+					<p>
+						Aenean congue a purus eget elementum. Aliquam nec dui suscipit, rutrum erat non, vestibulum elit. Integer porta volutpat lectus vel faucibus. Aliquam lobortis molestie sem, id bibendum risus sodales sit amet. Quisque euismod sapien vel libero semper maximus. Proin nec nibh arcu. Ut molestie lectus ac congue consequat. Phasellus pretium consequat tempor. Nulla at lectus aliquam ligula consectetur sagittis. Nam ligula massa, condimentum quis neque sit amet, vulputate iaculis leo. Ut eleifend mauris sit amet sem finibus facilisis. Integer blandit vulputate rutrum. Fusce eros mauris, pretium non dignissim sed, laoreet vel erat. Proin condimentum varius hendrerit. Aliquam vehicula ante nec nibh volutpat, in hendrerit velit gravida.
+					</p>
+					<p>
+						Nulla facilisi. Nullam ultricies posuere nulla, at tristique dui viverra ac. Suspendisse gravida semper mi sed luctus. Vivamus malesuada lacus non velit vulputate maximus. Duis in nisl vel ipsum porttitor mollis. Nunc sollicitudin lacus molestie feugiat eleifend. Mauris id orci at lorem mollis gravida. Donec odio nunc, condimentum sed purus sit amet, vestibulum dignissim justo. Curabitur sollicitudin dui id metus bibendum maximus. Nulla sagittis ultrices ligula id elementum. Integer in neque quam. Nam fringilla tincidunt massa laoreet dignissim. Praesent augue metus, tempus sit amet finibus ut, luctus sit amet tellus.
+					</p>
+					<p>
+						Proin vel sodales nulla. Phasellus ac massa in libero congue fermentum sed et nisl. Mauris sit amet lacinia purus, non viverra erat. Mauris placerat ante a leo maximus, a cursus sem suscipit. In dolor eros, luctus laoreet iaculis ut, dapibus vitae dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium nulla eu blandit commodo. Nunc odio erat, dapibus ac massa non, malesuada pharetra tellus.
+					</p>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section id="">
-
+		<div id="lipsum">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
+			</p>
+			<p>
+				Nulla id semper ipsum. Duis aliquet dignissim feugiat. Maecenas tempor est urna, in posuere mi cursus a. Cras non orci vitae lorem sagittis cursus nec eget odio. Etiam tincidunt pharetra ultricies. Nam consequat suscipit est, placerat lobortis leo consequat eget. Vestibulum nisi urna, aliquam eu vulputate ut, congue nec sapien. Curabitur viverra sodales tellus in sollicitudin. Curabitur ornare urna id turpis aliquet, ac aliquam risus venenatis. In nec ullamcorper enim, vel iaculis ex. Duis eu tortor vitae nulla fermentum laoreet. Suspendisse dolor urna, posuere vitae arcu eu, blandit tempus nisl. Ut sed consectetur velit, non pharetra orci.
+			</p>
+			<p>
+				Aenean congue a purus eget elementum. Aliquam nec dui suscipit, rutrum erat non, vestibulum elit. Integer porta volutpat lectus vel faucibus. Aliquam lobortis molestie sem, id bibendum risus sodales sit amet. Quisque euismod sapien vel libero semper maximus. Proin nec nibh arcu. Ut molestie lectus ac congue consequat. Phasellus pretium consequat tempor. Nulla at lectus aliquam ligula consectetur sagittis. Nam ligula massa, condimentum quis neque sit amet, vulputate iaculis leo. Ut eleifend mauris sit amet sem finibus facilisis. Integer blandit vulputate rutrum. Fusce eros mauris, pretium non dignissim sed, laoreet vel erat. Proin condimentum varius hendrerit. Aliquam vehicula ante nec nibh volutpat, in hendrerit velit gravida.
+			</p>
+			<p>
+				Nulla facilisi. Nullam ultricies posuere nulla, at tristique dui viverra ac. Suspendisse gravida semper mi sed luctus. Vivamus malesuada lacus non velit vulputate maximus. Duis in nisl vel ipsum porttitor mollis. Nunc sollicitudin lacus molestie feugiat eleifend. Mauris id orci at lorem mollis gravida. Donec odio nunc, condimentum sed purus sit amet, vestibulum dignissim justo. Curabitur sollicitudin dui id metus bibendum maximus. Nulla sagittis ultrices ligula id elementum. Integer in neque quam. Nam fringilla tincidunt massa laoreet dignissim. Praesent augue metus, tempus sit amet finibus ut, luctus sit amet tellus.
+			</p>
+			<p>
+				Proin vel sodales nulla. Phasellus ac massa in libero congue fermentum sed et nisl. Mauris sit amet lacinia purus, non viverra erat. Mauris placerat ante a leo maximus, a cursus sem suscipit. In dolor eros, luctus laoreet iaculis ut, dapibus vitae dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium nulla eu blandit commodo. Nunc odio erat, dapibus ac massa non, malesuada pharetra tellus.
+			</p>
+		</div>
 	</section>
 
 	<section id="">
-
+		<div id="lipsum">
+			<p>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
+			</p>
+			<p>
+				Nulla id semper ipsum. Duis aliquet dignissim feugiat. Maecenas tempor est urna, in posuere mi cursus a. Cras non orci vitae lorem sagittis cursus nec eget odio. Etiam tincidunt pharetra ultricies. Nam consequat suscipit est, placerat lobortis leo consequat eget. Vestibulum nisi urna, aliquam eu vulputate ut, congue nec sapien. Curabitur viverra sodales tellus in sollicitudin. Curabitur ornare urna id turpis aliquet, ac aliquam risus venenatis. In nec ullamcorper enim, vel iaculis ex. Duis eu tortor vitae nulla fermentum laoreet. Suspendisse dolor urna, posuere vitae arcu eu, blandit tempus nisl. Ut sed consectetur velit, non pharetra orci.
+			</p>
+			<p>
+				Aenean congue a purus eget elementum. Aliquam nec dui suscipit, rutrum erat non, vestibulum elit. Integer porta volutpat lectus vel faucibus. Aliquam lobortis molestie sem, id bibendum risus sodales sit amet. Quisque euismod sapien vel libero semper maximus. Proin nec nibh arcu. Ut molestie lectus ac congue consequat. Phasellus pretium consequat tempor. Nulla at lectus aliquam ligula consectetur sagittis. Nam ligula massa, condimentum quis neque sit amet, vulputate iaculis leo. Ut eleifend mauris sit amet sem finibus facilisis. Integer blandit vulputate rutrum. Fusce eros mauris, pretium non dignissim sed, laoreet vel erat. Proin condimentum varius hendrerit. Aliquam vehicula ante nec nibh volutpat, in hendrerit velit gravida.
+			</p>
+			<p>
+				Nulla facilisi. Nullam ultricies posuere nulla, at tristique dui viverra ac. Suspendisse gravida semper mi sed luctus. Vivamus malesuada lacus non velit vulputate maximus. Duis in nisl vel ipsum porttitor mollis. Nunc sollicitudin lacus molestie feugiat eleifend. Mauris id orci at lorem mollis gravida. Donec odio nunc, condimentum sed purus sit amet, vestibulum dignissim justo. Curabitur sollicitudin dui id metus bibendum maximus. Nulla sagittis ultrices ligula id elementum. Integer in neque quam. Nam fringilla tincidunt massa laoreet dignissim. Praesent augue metus, tempus sit amet finibus ut, luctus sit amet tellus.
+			</p>
+			<p>
+				Proin vel sodales nulla. Phasellus ac massa in libero congue fermentum sed et nisl. Mauris sit amet lacinia purus, non viverra erat. Mauris placerat ante a leo maximus, a cursus sem suscipit. In dolor eros, luctus laoreet iaculis ut, dapibus vitae dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium nulla eu blandit commodo. Nunc odio erat, dapibus ac massa non, malesuada pharetra tellus.
+			</p>
+		</div>
 	</section>
 
 	<footer id="homepage-footer">

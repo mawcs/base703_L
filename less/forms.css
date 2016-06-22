@@ -2913,12 +2913,12 @@ Copyright (c) 2015 Daniel Eden
   color: #c0c0c0;
 }
 .postmeta a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 .btn {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
@@ -2932,7 +2932,7 @@ input[type="reset"],
 input[type="submit"] {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
@@ -2941,7 +2941,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
-  background: #cf0a38;
+  background: #c4b23a;
 }
 button:focus,
 input[type="button"]:focus,
@@ -2951,7 +2951,7 @@ button:active,
 input[type="button"]:active,
 input[type="reset"]:active,
 input[type="submit"]:active {
-  outline: 2px solid rgba(207, 10, 56, 0.5);
+  outline: 2px solid rgba(196, 178, 58, 0.5);
 }
 input[type="text"],
 input[type="email"],
@@ -2961,7 +2961,7 @@ input[type="search"],
 textarea {
   border: 2px solid white;
   background: transparent;
-  color: #0ACFA1;
+  color: #3A4CC4;
 }
 input[type="text"]:focus,
 input[type="email"]:focus,
@@ -2969,7 +2969,7 @@ input[type="url"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 textarea:focus {
-  outline: 2px solid rgba(207, 10, 56, 0.7);
+  outline: 2px solid rgba(196, 178, 58, 0.7);
   background: rgba(255, 255, 255, 0.5);
 }
 input[type="text"],
@@ -2984,7 +2984,7 @@ textarea {
   width: 100%;
 }
 p label {
-  color: #0ACFA1;
+  color: #3A4CC4;
   display: block;
 }
 .entry-content input[type="text"],
@@ -2993,7 +2993,7 @@ p label {
 .entry-content input[type="password"],
 .entry-content input[type="search"],
 .entry-content textarea {
-  border: 2px solid rgba(10, 207, 161, 0.25);
+  border: 2px solid rgba(58, 76, 196, 0.25);
   background: transparent;
-  color: #0ACFA1;
+  color: #3A4CC4;
 }

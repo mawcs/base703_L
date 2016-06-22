@@ -19,7 +19,7 @@ wp-content/plugins/hello.php
 
 /homepage/font/freestyle-script.css
 # /homepage/font/*.css
-/less/*.css
+less/*.css
 style.css
 
 .idea

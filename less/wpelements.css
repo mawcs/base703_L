@@ -2913,12 +2913,12 @@ Copyright (c) 2015 Daniel Eden
   color: #c0c0c0;
 }
 .postmeta a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 .btn {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
@@ -3062,7 +3062,7 @@ object {
 ## Blocks
 --------------------------------------------------------------*/
 #masthead {
-  background-color: #0ACFA1;
+  background-color: white;
   position: fixed;
   width: 100%;
   z-index: 99999;
@@ -3116,7 +3116,7 @@ object {
 #content blockquote:before,
 #content q:before {
   font-family: serif;
-  color: #CEF5EC;
+  color: #F4F5FC;
   content: open-quote;
   font-size: 4em;
   line-height: 0.1em;
@@ -3134,8 +3134,8 @@ object {
 #content q {
   clear: both;
   width: 80%;
-  background: rgba(206, 245, 236, 0.2);
-  border-left: 2px solid #CEF5EC;
+  background: rgba(244, 245, 252, 0.2);
+  border-left: 2px solid #F4F5FC;
   margin: 1.5em 10px;
   padding: 0.5em 10px;
   quotes: "\201C" "\201D" "\2018" "\2019";
@@ -3172,7 +3172,7 @@ object {
   top: -1rem;
 }
 #content #primary #main article .entry-meta a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 #content #primary #main article .entry-content p {
   margin-top: 0;
@@ -3183,7 +3183,7 @@ object {
   color: #c0c0c0;
 }
 #content #primary #main article .entry-footer a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 #content #primary #main article .entry-footer .cat-links,
 #content #primary #main article .entry-footer .tags-links,
@@ -3215,7 +3215,7 @@ object {
   color: #c0c0c0;
 }
 #content #primary #main #comments .comment-metadata a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 #content #secondary {
   background: rgba(255, 255, 255, 0.85);
@@ -3262,8 +3262,8 @@ object {
 }
 #colophon {
   margin-top: 56px;
-  background: #152b21;
-  color: #CEF5EC;
+  background: #232E76;
+  color: #F4F5FC;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -3298,7 +3298,7 @@ object {
 #colophon input[type="password"],
 #colophon input[type="search"],
 #colophon textarea {
-  border: 2px solid #CEF5EC;
+  border: 2px solid #F4F5FC;
   background: transparent;
   color: white;
 }
@@ -3327,10 +3327,10 @@ object {
 }
 #colophon .subfooter {
   font-size: 13px;
-  background-color: #000000;
+  background-color: #060814;
   height: 36px;
   max-height: 36px;
-  color: #64dfc3;
+  color: #909ae1;
 }
 #colophon .subfooter a {
   color: #bfbfbf;

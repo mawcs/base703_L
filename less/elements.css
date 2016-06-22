@@ -2913,12 +2913,12 @@ Copyright (c) 2015 Daniel Eden
   color: #c0c0c0;
 }
 .postmeta a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 .btn {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
@@ -2981,6 +2981,6 @@ table {
   background: transparent;
 }
 .btn:hover {
-  background: #cf0a38;
+  background: #c4b23a;
   color: white;
 }

@@ -2913,15 +2913,437 @@ Copyright (c) 2015 Daniel Eden
   color: #c0c0c0;
 }
 .postmeta a {
-  color: #79f9db;
+  color: #b0b7e7;
 }
 .btn {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
+}
+/*--------------------------------------------------------------
+# Content
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+.sticky {
+  display: block;
+}
+.hentry {
+  margin: 0 0 1.5em;
+}
+.byline,
+.updated:not(.published) {
+  display: none;
+}
+.single .byline,
+.group-blog .byline {
+  display: inline;
+}
+.page-content,
+.entry-content,
+.entry-summary {
+  margin: 0.5em 0 0;
+}
+.page-links {
+  clear: both;
+  margin: 0 0 1.5em;
+}
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+.blog .format-aside .entry-title,
+.archive .format-aside .entry-title {
+  display: none;
+}
+.tagcloud {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+.comment-content a {
+  word-wrap: break-word;
+}
+.bypostauthor {
+  display: block;
+}
+/*--------------------------------------------------------------
+# Infinite scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation,
+.infinite-scroll.neverending .site-footer {
+  /* Theme Footer (when set to scrolling) */
+  display: none;
+}
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+  display: block;
+}
+/*--------------------------------------------------------------
+# Media
+--------------------------------------------------------------*/
+.page-content .wp-smiley,
+.entry-content .wp-smiley,
+.comment-content .wp-smiley {
+  border: none;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 0;
+}
+/* Make sure embeds and iframes fit their containers. */
+embed,
+iframe,
+object {
+  max-width: 100%;
+}
+/*--------------------------------------------------------------
+## Captions
+--------------------------------------------------------------*/
+.wp-caption {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+}
+.wp-caption img[class*="wp-image-"] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.wp-caption .wp-caption-text {
+  margin: 0.8075em 0;
+}
+.wp-caption-text {
+  text-align: center;
+}
+/*--------------------------------------------------------------
+## Galleries
+--------------------------------------------------------------*/
+.gallery {
+  margin-bottom: 1.5em;
+}
+.gallery-item {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 100%;
+}
+.gallery-columns-2 .gallery-item {
+  max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+  max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+  max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+  max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+  max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+  max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+  max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+  max-width: 11.11%;
+}
+.gallery-caption {
+  display: block;
+}
+/*--------------------------------------------------------------
+## Blocks
+--------------------------------------------------------------*/
+#masthead {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 99999;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+#masthead .site-header-content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#masthead .site-header-content .site-branding #site-logo img {
+  width: 125px;
+}
+#masthead .site-header-content .site-description {
+  display: none;
+}
+#content {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+#content blockquote:before,
+#content q:before {
+  font-family: serif;
+  color: #F4F5FC;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  position: relative;
+  top: 0.35em;
+  display: inline;
+  float: left;
+}
+#content blockquote:after,
+#content q:after {
+  content: "";
+}
+#content blockquote,
+#content q {
+  clear: both;
+  width: 80%;
+  background: rgba(244, 245, 252, 0.2);
+  border-left: 2px solid #F4F5FC;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+#content #primary {
+  flex-grow: 5;
+  max-width: 960px;
+  min-width: 600px;
+  padding: 56px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.85);
+  margin-top: 98px;
+}
+#content #primary #main article {
+  background: white;
+  padding: 42px;
+  padding-top: 32px;
+  border-radius: 2px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+#content #primary #main article .entry-title {
+  margin-top: 0;
+  font-size: 24px;
+  font-size: 1.4rem;
+}
+#content #primary #main article .entry-title a {
+  text-decoration: none;
+}
+#content #primary #main article .entry-meta {
+  font-size: 11px;
+  font-size: 0.8rem;
+  color: #c0c0c0;
+  position: relative;
+  top: -1rem;
+}
+#content #primary #main article .entry-meta a {
+  color: #b0b7e7;
+}
+#content #primary #main article .entry-content p {
+  margin-top: 0;
+}
+#content #primary #main article .entry-footer {
+  font-size: 11px;
+  font-size: 0.8rem;
+  color: #c0c0c0;
+}
+#content #primary #main article .entry-footer a {
+  color: #b0b7e7;
+}
+#content #primary #main article .entry-footer .cat-links,
+#content #primary #main article .entry-footer .tags-links,
+#content #primary #main article .entry-footer .comments-link,
+#content #primary #main article .entry-footer .edit-link {
+  display: block;
+}
+#content #primary #main article .entry-footer .comments-link {
+  margin-top: 1em;
+  font-size: 15px;
+  font-size: 1rem;
+}
+#content #primary #main article .entry-footer .edit-link {
+  float: right;
+  position: relative;
+  top: -1.35rem;
+}
+#content #primary #main #comments ol.comment-list {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+#content #primary #main #comments .comment-author img {
+  margin-right: 4px;
+}
+#content #primary #main #comments .comment-metadata {
+  font-size: 11px;
+  font-size: 0.8rem;
+  color: #c0c0c0;
+}
+#content #primary #main #comments .comment-metadata a {
+  color: #b0b7e7;
+}
+#content #secondary {
+  background: rgba(255, 255, 255, 0.85);
+  flex-grow: 3;
+  max-width: 320px;
+  min-width: 180px;
+  padding: 56px;
+  min-height: 100%;
+  margin-top: 98px;
+}
+#content #secondary h2 {
+  margin-top: 24px;
+  font-size: 0.9rem;
+  color: #a6a6a6;
+}
+#content #secondary ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+#content #secondary ul li {
+  margin: 0.4em 0;
+}
+#content #secondary a {
+  text-decoration: none;
+}
+#content #secondary li.recentcomments .comment-author-link {
+  font-size: 0.9rem;
+  display: block;
+}
+#content #secondary .widget_calendar table caption,
+#content #secondary .widget_calendar table tfoot,
+#content #secondary .widget_calendar table tfoot a {
+  color: #a6a6a6;
+}
+#content #secondary .widget_calendar table thead {
+  color: #d9d9d9;
+}
+#content #secondary .widget_calendar table tbody {
+  color: #8d8d8d;
+}
+#content #secondary .widget_calendar table tbody td {
+  text-align: center;
+}
+#colophon {
+  margin-top: 56px;
+  background: #232E76;
+  color: #F4F5FC;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-delay: 0.5s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation-duration: 1s;
+  -moz-animation-delay: 0.5s;
+  -moz-animation-iteration-count: 1;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-iteration-count: 1;
+}
+#colophon a {
+  color: white;
+}
+#colophon a:hover,
+#colophon a:active {
+  color: white;
+}
+#colophon a:visited {
+  color: #e6e6e6;
+}
+#colophon input[type="text"],
+#colophon input[type="email"],
+#colophon input[type="url"],
+#colophon input[type="password"],
+#colophon input[type="search"],
+#colophon textarea {
+  border: 2px solid #F4F5FC;
+  background: transparent;
+  color: white;
+}
+#colophon ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+#colophon .footer-content {
+  width: 100%;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#colophon .footer-content .footer-widgets {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: stretch;
+}
+#colophon .footer-content .footer-widgets .widget-area {
+  margin: 12px;
+}
+#colophon .subfooter {
+  font-size: 13px;
+  background-color: #060814;
+  height: 36px;
+  max-height: 36px;
+  color: #909ae1;
+}
+#colophon .subfooter a {
+  color: #bfbfbf;
+}
+#colophon .subfooter .subfooter-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
 }
 #homepage a {
   color: #e6e6e6;
@@ -2950,7 +3372,7 @@ Copyright (c) 2015 Daniel Eden
   top: 0;
   left: 0;
   margin-bottom: 0;
-  background-color: #0ACFA1;
+  background-color: white;
   height: 64px;
   max-height: 64px;
   transition: height 0.5s, max-height 0.5s;
@@ -2999,7 +3421,7 @@ Copyright (c) 2015 Daniel Eden
   animation-iteration-count: 1;
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
-  background-color: #0ACFA1;
+  background-color: #3A4CC4;
   height: 45em;
   min-height: 45em;
   background-image: url(../homepage/img/);
@@ -3081,7 +3503,7 @@ Copyright (c) 2015 Daniel Eden
 #homepage #currentstuff-block {
   margin-top: 45em;
   height: 100%;
-  background-color: #FFBD0C;
+  background-color: #C49A3A;
   background-image: url(../homepage/img/);
   background-repeat: no-repeat;
   background-position: center center;
@@ -3099,7 +3521,7 @@ Copyright (c) 2015 Daniel Eden
 #homepage #currentstuff-block .current-wrapper {
   width: 100%;
   height: 100%;
-  background-color: rgba(255, 189, 12, 0.5);
+  background-color: rgba(196, 154, 58, 0.5);
   padding: 3em;
 }
 #homepage #currentstuff-block .current-wrapper .current-content {
@@ -3178,7 +3600,7 @@ Copyright (c) 2015 Daniel Eden
 #homepage #currentstuff-block .current-wrapper .current-content .current-items .current-event .register {
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
@@ -3316,7 +3738,7 @@ Copyright (c) 2015 Daniel Eden
   height: 100%;
 }
 #homepage #homepage-video .hompage-video-wrapper {
-  background-color: rgba(10, 207, 161, 0.7);
+  background-color: rgba(58, 76, 196, 0.7);
   width: 100%;
   height: 100%;
 }
@@ -3349,13 +3771,13 @@ Copyright (c) 2015 Daniel Eden
   margin-right: auto;
   cursor: pointer;
   border: 2px solid white;
-  background: #0ACFA1;
+  background: #3A4CC4;
   padding: 0.3em 1.1em;
   color: white;
   border-radius: 2px;
 }
 #homepage #homepage-footer {
-  background-color: #152b21;
+  background-color: #232E76;
   color: white;
 }
 #homepage #homepage-footer .homepage-footer-wrapper {
@@ -3418,7 +3840,7 @@ Copyright (c) 2015 Daniel Eden
   background: rgba(255, 255, 255, 0.3);
 }
 #homepage #homepage-footer .homepage-footer-wrapper .newsletter-signup .newsletter-form form input[type=submit]:hover {
-  background: #FFBD0C;
+  background: #C49A3A;
 }
 #homepage #homepage-footer .homepage-footer-wrapper .newsletter-signup .newsletter-form form .placeholder {
   margin-left: 12px;
