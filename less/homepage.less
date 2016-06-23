@@ -540,7 +540,11 @@
 	}
 
 	#homepage-footer{
+		@footergradientedge: darken(@footerbg, 10%);
+
 		background-color: @footerbg;
+
+		background-image: radial-gradient(circle farthest-corner at 50% 50% , @footerbg 0%, @footergradientedge 100%);
 		color: @buttonbordercolor;
 
 		.homepage-footer-wrapper{
@@ -685,6 +689,13 @@
 					li{
 						display: inline-block;
 						margin: 0 1em;
+
+						a{
+							color: fade(@buttonbordercolor, 60%);
+						}
+						a:hover{
+							color: @buttonbordercolor;
+						}
 					}
 				}
 			}
