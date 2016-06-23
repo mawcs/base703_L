@@ -18,7 +18,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
-	<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/js/vend/wow.min.js"></script>
 	<script src="<?php bloginfo('template_directory'); ?>/homepage/js/p.js"></script>
 

@@ -37,10 +37,10 @@
 		top: 0;
 		left: 0;
 		margin-bottom: 0;
-		background-color: @headerbg;
+		background-color: transparent;
 		height: 64px;
 		max-height: 64px;
-		transition: height @mastheadtransitiontime, max-height @mastheadtransitiontime;
+		transition: height @mastheadtransitiontime, max-height @mastheadtransitiontime, background-color @mastheadtransitiontime;
 
 		.main-navigation{
 			z-index: 9;
@@ -60,7 +60,7 @@
 				align-items: baseline;
 				align-content: flex-end;
 
-				//background: yellow;
+				transition: width @mastheadtransitiontime;
 
 				li{
 					height: 100%;
@@ -69,6 +69,8 @@
 					padding-top: 0.3em;
 
 					display: inline-block;
+
+					transition: font-size @mastheadtransitiontime;
 
 					a{
 						margin-top: 2em;
@@ -106,7 +108,8 @@
 	#masthead.stick{
 		height: 42px;
 		max-height: 42px;
-		transition: height @mastheadtransitiontime, max-height @mastheadtransitiontime;
+		background-color: @headerbg;
+		transition: height @mastheadtransitiontime, max-height @mastheadtransitiontime, background-color @mastheadtransitiontime;
 
 		.main-navigation{
 			height: 100%;
@@ -115,9 +118,13 @@
 
 			.menu{
 				height: 100%;
+				width: 50%;
+				transition: width @mastheadtransitiontime;
 
 				li{
 					height: 100%;
+					font-size: 1.8rem;
+					transition: font-size @mastheadtransitiontime;
 				}
 			}
 		}
