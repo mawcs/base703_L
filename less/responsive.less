@@ -2,50 +2,14 @@
 @import (once) "vars";
 @import (once) "mixins";
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 60em) {
 	.menu-toggle {
 		display: none;
 	}
 
-	#masthead{
-		max-height: @headheight;
-
-		.site-header-content{
-
-			.site-branding{
-
-			}
-		}
-
-		.main-navigation{
-			height: @headheight;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			max-width: @bodymaxwidth;
-
-			.menu-main-menu-container{
-				height: 100%;
-
-				ul {
-					display: flex;
-					flex-direction: row;
-					justify-content: flex-end;
-					align-items: center;
-					height: 100%;
-
-					li {
-						display: inline-block;
-						text-align: center;
-						margin: 0 18px;
-					}
-				}
-			}
-		}
-	}
 }
 
-@media screen and (max-width: 50em){
+@media screen and (max-width: 60em){
 
 	#masthead{
 		position: fixed;
