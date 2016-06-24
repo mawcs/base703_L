@@ -23,6 +23,7 @@
 	<script src="<?php bloginfo('template_directory'); ?>/homepage/js/p.js"></script>
 
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/raleway.css">
+	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/trirong.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/socicon.css">
 	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/less/homepage.css">
 
@@ -58,11 +59,19 @@
 	<section id="hero" class="wow">
 		<div class="hero-content">
 			<div class="call-to-action-block">
-				<div id="lipsum">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
-					</p>
+				<div class="heroheader">
+					<p class="whatif">What if turning your dreams into reality was as simple as <em>making a choice</em>?</p>
+				</div>
+				<div class="thecall">
+					<p class="wouldyou">Would you make that choice?</p>
+				</div>
 
+				<div class="hero-subtext">
+					<p class="wewant">We want to help you develop the edge you need to turn your dreams into reality</p>
+				</div>
+
+				<div class="herobuttons">
+					<a class="btn" href="choice">Yes! I'd Make the Choice</a>
 				</div>
 			</div>
 		</div>

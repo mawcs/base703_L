@@ -6,6 +6,10 @@
 
 @subduedtextcolor: darken(@maincolor, 30%);
 
+body {
+	overflow-x: visible !important;
+}
+
 #homepage{
 	a{
 		color: @subduedtextcolor;
@@ -147,70 +151,55 @@
 		.fadeIn;
 
 		background-color: darken(@herocolor, 10%);
-		height: 45em;
-		min-height: 45em;
-		background-image: url(../homepage/img/);
+		height: 55em;
+		min-height: 55em;
+		background-image: url(../homepage/img/dreams.jpg);
 		background-repeat: no-repeat;
-		background-position: center 64px;
+		background-position: top center;
 		background-size: cover ;
-		//background-size: 100% auto;
-		padding-top: 128px;
 		color: @maincolor;
 		position: fixed;
 		width: 100%;
 		top: 0;
 		left: 0;
 		z-index: -1;
+		//z-index: 1;
 
 		.hero-content{
+			font-family: Raleway, sans-serif;
 			max-width: @bodymaxwidth;
 			margin-left: auto;
 			margin-right: auto;
 
 			text-align: center;
 
-			.call-to-action-block{
+			.call-to-action-block{//TODO fix IE wrapping issue. BUG IE 11 doesn't wrap the content correctly.
 				width: 29em;
 				position: relative;
 				top: 8em;
 				vertical-align: baseline;
+				float: right;
+				margin-right: 2em;
 
 				display: flex;
 				flex-direction: column;
 				justify-content: space-between;
 				align-items: center;
 
-				height: 22em;
+				height: 24em;
 
 				.heroheader{
+					font-family: "Raleway", sans-serif;
 					border-color: @herocolor;
-					border-top: 1px solid;
-					border-bottom: 1px solid;
+					font-size: 2.8rem;
 
-					span{
-						margin: 0.1em;
-					}
+				}
 
-					.fl, .and{
-						font-family: "Raleway", sans-serif;
-						line-height: 1.1em;
-						padding-bottom: 0.1em;
-					}
-
-					.pretext{
-						font-size: 1.7rem;
-						font-weight: 300;
-					}
-
-					.fl{
-						display: inline-block;
-						font-size: 4.5rem;
-						transform: translateY(0.05em);
-					}
-
-					.and{
-						font-size: 2rem;
-					}
+				.thecall{
+					font-family: "Trirong", sans-serif;
+					font-weight: 500;
+					font-style: italic;
+					font-size: 3.6rem;
 				}
 
 				.herobuttons{
@@ -220,37 +209,40 @@
 					justify-content: space-around;
 					align-items: center;
 					flex-wrap: nowrap;
+					margin-top: 2rem;
 
 					.btn{
-						font-size: 1.6em;
+						background: @altcolor;
+						font-size: 2.2rem;
+						color: @buttonbordercolor;
+						transition: background-color @mastheadtransitiontime, box-shadow @mastheadtransitiontime, transform  @mastheadtransitiontime;
+					}
+
+					.btn:hover{
+						background-color: lighten(@altcolor, 8%);
+						transition: background-color @mastheadtransitiontime, box-shadow @mastheadtransitiontime, transform  @mastheadtransitiontime;
+						transform: scale(1.1);
+						.z-depth(5);
 					}
 				}
 
 				.hero-subtext{
-					font-size: 1.7em;
+					font-size: 1.3em;
 					font-weight: 300;
 
 					p{
 						margin: 0;
 					}
 				}
-
-
 			}
-
 		}
-
 	}
-
-	#hero.altbg{
-		background-image: url(../homepage/img/);
-	}
-
 
 	#currentstuff-block {
-		margin-top: 45em;
+		margin-top: 55em;
+		padding-top: 3em;
 		height: 100%;
-		background-color: @altcolor;
+		background-color: @alt3color;
 		background-image: url(../homepage/img/);
 		background-repeat: no-repeat;
 		background-position: center center;
@@ -267,6 +259,7 @@
 		-webkit-box-shadow: @shadow;
 		-moz-box-shadow:    @shadow;
 		box-shadow:         @shadow;
+		z-index: 2;
 
 		.current-wrapper{
 			width: 100%;
@@ -479,6 +472,7 @@
 
 	#homepage-video{
 
+		background-color: white;
 		background-image: url(../homepage/img/);
 		background-repeat: no-repeat;
 		background-position: center center;
