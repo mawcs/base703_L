@@ -27,7 +27,7 @@
 			}
 		}
 
-		#masthead{
+		#masthead, #masthead.stick{
 			position: fixed;
 			width: 100%;
 			margin-bottom: 0;
@@ -73,9 +73,10 @@
 				}
 
 				.menu{
-					.slideInDown;
-					.animated;
-					.anim-params(0.7s, 0);
+					//.slideInDown;
+					//.animated;
+					//.anim-params(0.7s, 0);
+					transition: visibility 0s linear, opacity 0.7s ease-in-out;
 					position: absolute;
 					top: 0;
 					right: 0;
@@ -90,12 +91,14 @@
 					flex-direction: column;
 					justify-content: center;
 
+					opacity: 0;
 					visibility: hidden;
 					background: fade(@alt2color, 90%);
 
 					li{
 						display: block;
 						line-height: 3em;
+						font-size: 2.4rem;
 
 						a, a:visited, a:hover, a:active{
 							color: white;
@@ -104,7 +107,9 @@
 				}
 
 				.menu.visible{
+					opacity: 1;
 					visibility: visible;
+					transition: visibility 0s linear, opacity 0.7s ease-in-out;
 				}
 			}
 
@@ -168,42 +173,58 @@
 			}
 		}
 
-		#colophon{
+		#homepage-footer{
 
-			.footer-content{
+			.homepage-footer-wrapper{
 
-				.footer-widgets{
+				.footer-content{
 
-					.widget-area{
-					}
-				}
-			}
+					.footer-widgets{
 
-			.subfooter{
-
-
-				.subfooter-content{
-				}
-			}
-
-			.wpcf7-form{
-
-				p{
-					width: 100%;
-
-					.wpcf7-form-control-wrap{
-						width: 90%;
-
-						input, textarea{
-							width: 90%;
+						.widget-area{
 						}
 					}
 				}
+
+				.wpcf7-form{
+
+					p{
+						width: 100%;
+
+						.wpcf7-form-control-wrap{
+							width: 90%;
+
+							input, textarea{
+								width: 90%;
+							}
+						}
+					}
+				}
+
+				.widget_text{
+					width: 95%;
+				}
+
+				.social-icons{
+					flex-wrap: wrap;
+				}
+
+				.subfooter{
+					padding: 0 1em;
+
+					.copyright{
+						display: block;
+						text-align: center;
+					}
+
+					.subnav{
+						margin-left: 0;
+						width: 100%;
+						text-align: center;
+					}
+				}
 			}
 
-			.widget_text{
-				width: 95%;
-			}
 		}
 	}
 
