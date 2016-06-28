@@ -40,13 +40,15 @@
 				<?php wp_nav_menu( array( 'theme_location' => LAYERS_THEME_SLUG . '-primary' ,'container' => FALSE, 'fallback_cb' => 'layers_menu_fallback' )); ?>
 			</nav><!-- #site-navigation -->
 
-			<div class="site-branding"><!--TODO Fix the z-index issue-->
+			<div class="site-branding">
 
-				<?php $logo = get_option( 'site_logo' ); ?>
+				<?php
+				$logo = wp_get_attachment_url( get_theme_mod( 'custom_logo' ) );
+				?>
 
 				<?php if ( $logo ) : ?>
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" id="site-logo-link" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-						<img src="<?php echo esc_url( $logo['url'] ) ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
+						<img src="<?php echo esc_url( $logo ) ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>">
 					</a>
 				<?php else : ?>
 					<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
