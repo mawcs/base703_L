@@ -79,8 +79,8 @@
 					position: absolute;
 					top: 0;
 					right: 0;
-					width: 118vw;
-					height: 118vh;
+					width: 100vw;
+					height: 100vh;
 					margin-left: auto;
 					margin-right: auto;
 					padding-top: 2em;
@@ -101,6 +101,10 @@
 							color: white;
 						}
 					}
+				}
+
+				.menu.visible{
+					visibility: visible;
 				}
 			}
 
@@ -144,30 +148,15 @@
 		}
 
 		#content{
-			padding: 0;
-			margin: 0;
 
-			display: flex;
-			flex-direction: column;
-			justify-content: flex-start;
-			align-items: flex-start;
 
 			#primary{
-				padding: 0;
-				margin: 56px 0 0 0;
-				width: 100%;
-				min-width: 100%;
-				max-width: 100%;
-				flex-grow: 1;
+
 
 				.post-navigation{
-					margin-left: 1.5em;
-					margin-right: 1.5em;
 				}
 
 				.comments-area{
-					margin-left: 1.5em;
-					margin-right: 1.5em;
 
 					h2{
 					}
@@ -176,48 +165,24 @@
 			}
 
 			#secondary{
-				width: 100%;
-				min-width: 100%;
-				max-width: 100%;
-				flex-grow: 1;
-
-				padding: 1.5em;
 			}
 		}
 
 		#colophon{
-			margin-top: 0;
-			width: 100%;
 
 			.footer-content{
-				width: 100%;
-				box-sizing: border-box;
 
 				.footer-widgets{
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					width: 100%;
 
 					.widget-area{
-						margin: 0 -1.5em 1em 1.5em;
-						max-width: 92%;
 					}
 				}
 			}
 
 			.subfooter{
 
-				height: inherit;
-				max-height: inherit;
 
 				.subfooter-content{
-					display: flex;
-					flex-direction: column;
-					justify-content: flex-start;
-					align-items: flex-start;
-					width: 100%;
 				}
 			}
 
