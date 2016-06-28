@@ -1,7 +1,7 @@
 {
-  "name": "base703_s",
-  "version": "1.0.0",
-  "description": "703 Creative Base WordPress theme, tailored to James Divine",
+  "name": "base703_L",
+  "version": "0.0.1",
+  "description": "703 Creative Base WordPress theme, tailored to Mirus Edge",
   "main": "home.php",
   "dependencies": {},
   "devDependencies": {
@@ -25,12 +25,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mawcs/base703_s.git"
+    "url": "git+https://github.com/mawcs/base703_L.git"
   },
   "author": "Michael Williamson",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/mawcs/base703_s/issues"
+    "url": "https://github.com/mawcs/base703_L/issues"
   },
-  "homepage": "https://github.com/mawcs/base703_s#readme"
+  "homepage": "https://github.com/mawcs/base703_L#readme"
 }
