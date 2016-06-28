@@ -224,7 +224,7 @@ $layers_migrator = new Layers_Widget_Migrator(); ?>
 								<?php _e( 'Create Starter Page(s)', 'layerswp' ); ?>
 							</h3>
 							<p class="l_admin-excerpt">
-								<?php _e( "There are some standard pages that nearly all websites need. We reccomend that you let us create these for you and apply settings to make them work best with Layers. *these can easily be deleted later if you're not sure", 'layerswp' ); ?>
+								<?php _e( "There are some standard pages that nearly all websites need. We recommend that you let us create these for you and apply settings to make them work best with Layers. *these can easily be deleted later if you're not sure", 'layerswp' ); ?>
 							</p>
 						</div>
 
@@ -432,7 +432,12 @@ $layers_migrator = new Layers_Widget_Migrator(); ?>
 								 <?php _e( 'Layers will add your logo and position it properly. If you don&apos;t have one yet, no problem, you can add it later, or skip this step if you&apos;d just prefer to use text.' , 'layerswp' ); ?>
 							</p>
 						</div>
-						<?php $site_logo = get_option( 'site_logo' ); ?>
+						<?php if( function_exists( 'the_custom_logo' ) ) {
+							$site_logo[ 'id' ] =  get_theme_mod( 'custom_logo' );
+						} else {
+							$site_logo = get_option( 'site_logo' );
+						} ?>
+
 						<div class="l_admin-logo-wrapper">
 							<div class="l_admin-logo-upload-controller">
 								<?php

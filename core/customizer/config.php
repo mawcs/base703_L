@@ -298,7 +298,7 @@ class Layers_Customizer_Config {
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more control over your Logo Size & Header Layout? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Logo">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
+				'description' => __( 'Want more control over your Logo Size & Header Layout? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Logo">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
 			),
 		);
 
@@ -366,18 +366,12 @@ class Layers_Customizer_Config {
 				'type'     => 'layers-checkbox',
 				'label'    => __( 'Transparent Overlay' , 'layerswp' ),
 				'default'	=> FALSE,
-				/*
-				'linked' => array(
-					'show-if-selector' => '#layers-header-sticky',
-					'show-if-value' => 'true',
-				),
-				*/
 			),
 			'header-upsell-layers-pro' => array(
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more control over your Header Layout? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Header%20Layout">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
+				'description' => __( 'Want more control over your Header Layout? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Header%20Layout">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
 			),
 		);
 
@@ -402,7 +396,7 @@ class Layers_Customizer_Config {
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more blog customzation? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Blog%20Single">Purchase Layers Pro</a> and take control over your posts!' , 'layerswp' ),
+				'description' => __( 'Want more blog customzation? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Blog%20Single">Purchase Layers Pro</a> and take control over your posts!' , 'layerswp' ),
 			),
 		);
 
@@ -426,7 +420,7 @@ class Layers_Customizer_Config {
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more blog customzation? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Blog%20Archive">Purchase Layers Pro</a> and take control over your post archive!' , 'layerswp' ),
+				'description' => __( 'Want more blog customzation? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Blog%20Archive">Purchase Layers Pro</a> and take control over your post archive!' , 'layerswp' ),
 			),
 		);
 
@@ -462,7 +456,7 @@ class Layers_Customizer_Config {
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more color customzation? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Footer%20Layout">Purchase Layers Pro</a> and get the full box of crayons!' , 'layerswp' ),
+				'description' => __( 'Want more color customzation? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Footer%20Layout">Purchase Layers Pro</a> and get the full box of crayons!' , 'layerswp' ),
 			),
 		);
 
@@ -484,6 +478,12 @@ class Layers_Customizer_Config {
 				'type'     => 'layers-checkbox',
 				'label'    => __( "Display Widget Input 'name' Attributes", 'layerswp' ),
 				'description' => __( 'This is used in preparation of a new Widget so developer can quickly see all the possible fields in a Widget and make sure to set defaults for them.', 'layerswp' ),
+				'default' => '',
+			),
+			'dev-switch-button-css-testing' => array(
+				'type'     => 'layers-checkbox',
+				'label'    => __( "Display all Buttons CSS", 'layerswp' ),
+				'description' => __( 'This will output the CSS generated by Layers Pro and Layers when customizing your Buttons Globally or in the Widgets.', 'layerswp' ),
 				'default' => '',
 			),
 		);
@@ -545,7 +545,7 @@ class Layers_Customizer_Config {
 				'type'  => 'layers-heading',
 				'class' => 'layers-upsell-tag',
 				'label'    => __( 'Upgrade to Layers Pro' , 'layerswp' ),
-				'description' => __( 'Want more control over your Footer Layout? <a target="_blank" href="http://codecanyon.net/item/layers-pro-extended-customization-for-layers/11225042?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Footer%20Layout">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
+				'description' => __( 'Want more control over your Footer Layout? <a target="_blank" href="https://www.layerswp.com/layers-pro/?ref=obox&utm_source=layers%20theme&utm_medium=link&utm_campaign=Layers%20Pro%20Upsell&utm_content=Site%20Settings%20Footer%20Layout">Purchase Layers Pro</a> to unlock the full power of Layers!' , 'layerswp' ),
 			),
 		);
 

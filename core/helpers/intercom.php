@@ -48,11 +48,11 @@ class Layers_Intercom {
 		global $current_user, $wpdb, $wp_version, $wp_customize;
 
 		// Don't load in the customizer, or if we're not logged in; don't even try it.
-		if( !is_user_logged_in() || !is_admin() )
+		if( !is_user_logged_in() || !is_admin() || !current_user_can( 'administrator' ) )
 			return;
 
 		// Get current user info
-		get_currentuserinfo();
+		$current_user = wp_get_current_user();
 
 		/**
 		 * Basic Intercom settings
@@ -134,6 +134,8 @@ class Layers_Intercom {
 		if( isset( $launchpad['launchdate'] ) ){
 			$json[ 'launched_at' ] = strtotime( $launchpad['launchdate'] );
 		}
+
+		$json[ 'Custom CSS' ] = (bool) layers_get_theme_mod( 'custom-css' );
 
 		// jsonify the settings
 		$settings_json = json_encode( (object) $json, ( defined( 'JSON_PRETTY_PRINT' ) ? JSON_PRETTY_PRINT : TRUE ) ); ?>

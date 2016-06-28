@@ -1,6 +1,96 @@
 # Layers Changelog
 
 =======
+##1.5.5
+### xx Xxxx 2016
+
+* **Fix** - Fixed word-wrap issue in .story and .copy divs. *DP*
+
+=======
+##1.5.4
+### 22 June 2016
+
+* **Enhancement** - Updated Font Awesome to version 4.6.3 *MP*
+* **Enhancement** - Enable WordPress Selective Widget Refresh - widgets update much faster by sending changes via JS, no page refresh required. *SOB*
+* **Enhancement** - Fade-in the Slider only after it has been initialized. *SOB*
+* **Fix** - Fixed sub-menus when header menu is not yet set. *MP*
+* **Fix** - Bring back shift-click to edit Layers widgets in the Customizer. This was removed by changes in the widget container format in a recent WP update. *SOB*
+* **Fix** - off-canvas cart buttons are no longer breaking. *DP*
+* **Fix** - Gallery captions now display correctly in blog posts. *DP*
+* **Fix** - Images in posts are no longer display: block which was forcing them onto a new line. *DP*
+
+
+=======
+##1.5.3
+### 30 May 2016
+
+* **Fix** - WooCommerce grid update during checkout. *DP*
+
+=======
+##1.5.2
+### 30 May 2016
+
+* **Fix** - Fixed sub-category listing pages. *MP*
+* **Fix** - Updated Layers Pro upsell links.*MP*
+* **Fix** - Added conditional statements around `Layers_Widget_Migrator` where needed. *MP*
+* **Tweak** - Added a check to make sure that we never output two main titles on one page - Blank Page template. *SOB*
+
+
+=======
+##1.5.1
+### 26 Apr 2016
+
+* **Fix** - Changed some legacy references from `plugins_url()` to `LAYERS_TEMPLATE_URI`. *SOB*
+* **Fix** - Fixed standard widget layout on Layers pages. *MP*
+* **Tweak** - Changed `get_the_permalink()` to `get_permalink()`. *SOB*
+
+=======
+##1.5.0
+### 22 Apr 2016
+
+* **Fix** - Added `"` marks around fonts when using Google fonts, so that now fonts with a space in the name load without issue. *MP*
+* **Fix** - Fixed multiple maps on one page. *MP*
+* **Fix** - Fixed post widget button color selection. *MP*
+* **Fix** - Full width footer no longer touches sides, padding left-right has been added. *DP*
+* **Fix** - Fixed Image-botton icon. *DP*
+* **Fix** - Onboarding typo's. *DP*
+* **Fix** - `get_currentuserinfo()` warning in 4.5 is gone. *MP*
+* **Fix** - Fixed aligncenter bug in blog posts which stopped images from centering. *DP*
+* **Fix** - Last item in in horizontal design bar Drop down now opens right: 0 to avoid overflow bug. *DP*
+* **Tweak** - Replaced all `<section />` containers with `<div />` in order to reverse engineer better SEO as Layers progresses. *DP*
+* **Tweak** - Fixed associated CSS where section[class] was used. *DP*
+* **Tweak** - Show Address and Show Form are now defaulted to on in the conact widget. *MP*
+* **Tweak** - Fixed WooCommerce tab alignment issue in responsive mode. *DP*
+* **Tweak** - .story img changed from 98% to 100% width. *DP*
+* **Tweak** - Re-added product quantity in the mobile cart view. *MP*
+* **Tweak** - Change how `layers-interface-init` Javascript event is triggered so it can be used to initialize not only the Widgets but also the Customizer Controls. *SOB*
+* **Tweak** - Remove `layer_enqueue_init()` function - it's no longer needed now that the Customizer only loads Widget forms when needed, not all at once resulting in Firefox hanging. *SOB*
+* **Enhancement** - Entirely new grid code which allows for different columns in the same content widget, using flexbox and calc(). *DP*
+* **Enhancement** - Added subtle animation to .sub-menu drop down. *DP*
+* **Enhancement** - Added Open Graph meta support. *MP*
+* **Enhancement** - Added margin and padding (top and bottom) to the Content widget columns (See design-bar > advanced). *SOB*
+* **Enhancement** - Added 6 new icons to the Layers back end font family h1-h6 to cater for new SEO features. *DP*
+* **Enhancement** - Darken now works on all widgets. *DP*
+* **Enhancement** - Feature list (tick/cross) added to components CSS as part of new cheat-sheet CSS. *DP*
+* **Developer** - 'show_trash' declaration in the design bar now requires an explicit TRUE flag. *MP*
+* **Developer** - `id="post-<?php the_ID(); ?>"` now applies to the `<article>` wrapper in single posts & pages. *MP*
+* **Developer** - Added `id="post-list"` to post archive containers. *MP*
+* **Developer** - Changed Off-canvas sidebar from a `section` to `div`. *MP*
+
+=======
+##1.2.14
+### 16 Feb 2016
+
+* **Fix** - Removed all custom CSS being output from `the_content();` in Layers Pages. *MP*
+* **Fix** - Fixed Google Maps API warning when using the contact widget. *MP*
+* **Fix** - Fixed Image-Bottom icon. *DP*
+* **Fix** - CSS Class hiding customizer panel titles. *MP*
+* **Enchancement** - Added the Kanit Google font to the font list. *MP*
+* **Enchancement** - Updated WooCommerce template override versions. *MP*
+* **Enchancement** - Limited Messenger to administrators for sites, to avoid editors & subscribers from getting an Messenger popup. *MP*
+* **Enchancement** - Added device width to viewport meta. *MP*
+
+=======
 ##1.2.13
 ### 18 Feb 2016
 
