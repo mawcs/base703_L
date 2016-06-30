@@ -82,22 +82,53 @@
 	<section id="clientcall-block">
 		<div class="clientcall-wrapper">
 			<div class="clientcall-content">
-				<div class="lipsum">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
-					</p>
-					<p>
-						Nulla id semper ipsum. Duis aliquet dignissim feugiat. Maecenas tempor est urna, in posuere mi cursus a. Cras non orci vitae lorem sagittis cursus nec eget odio. Etiam tincidunt pharetra ultricies. Nam consequat suscipit est, placerat lobortis leo consequat eget. Vestibulum nisi urna, aliquam eu vulputate ut, congue nec sapien. Curabitur viverra sodales tellus in sollicitudin. Curabitur ornare urna id turpis aliquet, ac aliquam risus venenatis. In nec ullamcorper enim, vel iaculis ex. Duis eu tortor vitae nulla fermentum laoreet. Suspendisse dolor urna, posuere vitae arcu eu, blandit tempus nisl. Ut sed consectetur velit, non pharetra orci.
-					</p>
-					<p>
-						Aenean congue a purus eget elementum. Aliquam nec dui suscipit, rutrum erat non, vestibulum elit. Integer porta volutpat lectus vel faucibus. Aliquam lobortis molestie sem, id bibendum risus sodales sit amet. Quisque euismod sapien vel libero semper maximus. Proin nec nibh arcu. Ut molestie lectus ac congue consequat. Phasellus pretium consequat tempor. Nulla at lectus aliquam ligula consectetur sagittis. Nam ligula massa, condimentum quis neque sit amet, vulputate iaculis leo. Ut eleifend mauris sit amet sem finibus facilisis. Integer blandit vulputate rutrum. Fusce eros mauris, pretium non dignissim sed, laoreet vel erat. Proin condimentum varius hendrerit. Aliquam vehicula ante nec nibh volutpat, in hendrerit velit gravida.
-					</p>
-					<p>
-						Nulla facilisi. Nullam ultricies posuere nulla, at tristique dui viverra ac. Suspendisse gravida semper mi sed luctus. Vivamus malesuada lacus non velit vulputate maximus. Duis in nisl vel ipsum porttitor mollis. Nunc sollicitudin lacus molestie feugiat eleifend. Mauris id orci at lorem mollis gravida. Donec odio nunc, condimentum sed purus sit amet, vestibulum dignissim justo. Curabitur sollicitudin dui id metus bibendum maximus. Nulla sagittis ultrices ligula id elementum. Integer in neque quam. Nam fringilla tincidunt massa laoreet dignissim. Praesent augue metus, tempus sit amet finibus ut, luctus sit amet tellus.
-					</p>
-					<p>
-						Proin vel sodales nulla. Phasellus ac massa in libero congue fermentum sed et nisl. Mauris sit amet lacinia purus, non viverra erat. Mauris placerat ante a leo maximus, a cursus sem suscipit. In dolor eros, luctus laoreet iaculis ut, dapibus vitae dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium nulla eu blandit commodo. Nunc odio erat, dapibus ac massa non, malesuada pharetra tellus.
-					</p>
+				<div class="clientcall-item">
+					<div class="clientcall-item-image">
+						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/entrepreneur.jpg">
+					</div>
+					<div class="clientcall-item-text">
+						<h3>Entrepreneurs</h3>
+						<p>
+							Anyone making their way in the world knows that Entrepreneurs and Business Owners face a
+							distinct set of challenges in business and in life. Mirus Edge coaching can help to
+							streamline your activities to make the best out of your time.
+						</p>
+					</div>
+					<div class="clientcall-item-action">
+						<button class="btn">Start Now</button>
+					</div>
+				</div>
+				<div class="clientcall-item">
+					<div class="clientcall-item-image">
+						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/athlete.jpg">
+					</div>
+					<div class="clientcall-item-text">
+						<h3>Athletes</h3>
+						<p>
+							Athletes need coaches, of course. But, sometimes, the kind of coaching you need is help in
+							living better lives. Mirus Edge can give you the tools you need to stay motivated and live a
+							quality life that helps on and off the field; in and out of the game.
+						</p>
+					</div>
+					<div class="clientcall-item-action">
+						<button class="btn">Start Now</button>
+					</div>
+				</div>
+				<div class="clientcall-item">
+					<div class="clientcall-item-image">
+						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/businessperson.jpg">
+					</div>
+					<div class="clientcall-item-text">
+						<h3>Business People</h3>
+						<p>
+							Climbing the corporate ladder can feel like an unwinnable game. Sometimes, the boost you
+							need is a coach to get you to the next level. Mirus Edge can guide you in making the right
+							choices at the right times to give you the edge you need in the corporate world.
+						</p>
+					</div>
+					<div class="clientcall-item-action">
+						<button class="btn">Start Now</button>
+					</div>
 				</div>
 			</div>
 		</div>
