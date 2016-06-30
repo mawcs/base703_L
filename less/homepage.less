@@ -318,6 +318,7 @@ body {
 					}
 
 					.clientcall-item-action{
+						margin-top: 2em;
 						width: 100%;
 						text-align: center;
 						align-self: flex-end;
@@ -332,7 +333,7 @@ body {
 	#homepage-posts{
 
 		background-color: white;
-		background-image: url(../homepage/img/);
+		background-image: url(../homepage/img/gray_triangles.png);
 		background-repeat: no-repeat;
 		background-position: center center;
 		background-size: cover;
@@ -347,7 +348,54 @@ body {
 
 			.homepage-posts-content{
 
+				max-width: @bodymaxwidth;
+				margin-left: auto;
+				margin-right: auto;
 
+				.current-blog{
+					width: 100%;
+					margin-left: auto;
+					margin-right: auto;
+					text-align: center;
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+					justify-content: center;
+					flex-wrap: wrap;
+
+					.post{
+						text-align: left;
+						display: inline-block;
+						width: 45%;
+						max-width: 600px;
+						margin: 20px;
+
+						.img{
+							width: 90%;
+							max-width: 600px;
+							object-fit: cover;
+						}
+
+						.post-text{
+
+							h3{
+								font-size: 1.4em;
+							}
+
+							.postdate{
+
+								font-size: 0.8em;
+								color: lighten(@textcolor, 30%);
+							}
+
+							.readmore{
+								color: lighten(@linkcolor, 10%);
+								font-size: 0.9em;
+								text-align: right;
+							}
+						}
+					}
+				}
 			}
 		}
 	}

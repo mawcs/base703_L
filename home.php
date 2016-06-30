@@ -137,22 +137,33 @@
 	<section id="homepage-posts">
 		<div class="homepage-posts-wrapper">
 			<div class="homepage-posts-content">
-				<div class="lipsum">
-					<p>
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tincidunt tincidunt cursus. Nullam imperdiet, orci ut lobortis maximus, dui lacus imperdiet lectus, nec molestie libero metus sed nibh. Proin vulputate rhoncus euismod. Pellentesque turpis ligula, vestibulum vitae iaculis sed, cursus sed felis. Maecenas viverra vehicula lorem at ornare. Integer dignissim ligula nunc, et euismod lacus rutrum nec. Pellentesque nec nisl eu arcu blandit bibendum. Aenean vestibulum, massa eu fringilla imperdiet, mauris justo lacinia massa, sed semper ex turpis eget ante. Pellentesque tristique diam at augue viverra tempus. Praesent facilisis enim et urna tincidunt malesuada eget et sapien.
-					</p>
-					<p>
-						Nulla id semper ipsum. Duis aliquet dignissim feugiat. Maecenas tempor est urna, in posuere mi cursus a. Cras non orci vitae lorem sagittis cursus nec eget odio. Etiam tincidunt pharetra ultricies. Nam consequat suscipit est, placerat lobortis leo consequat eget. Vestibulum nisi urna, aliquam eu vulputate ut, congue nec sapien. Curabitur viverra sodales tellus in sollicitudin. Curabitur ornare urna id turpis aliquet, ac aliquam risus venenatis. In nec ullamcorper enim, vel iaculis ex. Duis eu tortor vitae nulla fermentum laoreet. Suspendisse dolor urna, posuere vitae arcu eu, blandit tempus nisl. Ut sed consectetur velit, non pharetra orci.
-					</p>
-					<p>
-						Aenean congue a purus eget elementum. Aliquam nec dui suscipit, rutrum erat non, vestibulum elit. Integer porta volutpat lectus vel faucibus. Aliquam lobortis molestie sem, id bibendum risus sodales sit amet. Quisque euismod sapien vel libero semper maximus. Proin nec nibh arcu. Ut molestie lectus ac congue consequat. Phasellus pretium consequat tempor. Nulla at lectus aliquam ligula consectetur sagittis. Nam ligula massa, condimentum quis neque sit amet, vulputate iaculis leo. Ut eleifend mauris sit amet sem finibus facilisis. Integer blandit vulputate rutrum. Fusce eros mauris, pretium non dignissim sed, laoreet vel erat. Proin condimentum varius hendrerit. Aliquam vehicula ante nec nibh volutpat, in hendrerit velit gravida.
-					</p>
-					<p>
-						Nulla facilisi. Nullam ultricies posuere nulla, at tristique dui viverra ac. Suspendisse gravida semper mi sed luctus. Vivamus malesuada lacus non velit vulputate maximus. Duis in nisl vel ipsum porttitor mollis. Nunc sollicitudin lacus molestie feugiat eleifend. Mauris id orci at lorem mollis gravida. Donec odio nunc, condimentum sed purus sit amet, vestibulum dignissim justo. Curabitur sollicitudin dui id metus bibendum maximus. Nulla sagittis ultrices ligula id elementum. Integer in neque quam. Nam fringilla tincidunt massa laoreet dignissim. Praesent augue metus, tempus sit amet finibus ut, luctus sit amet tellus.
-					</p>
-					<p>
-						Proin vel sodales nulla. Phasellus ac massa in libero congue fermentum sed et nisl. Mauris sit amet lacinia purus, non viverra erat. Mauris placerat ante a leo maximus, a cursus sem suscipit. In dolor eros, luctus laoreet iaculis ut, dapibus vitae dolor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque pretium nulla eu blandit commodo. Nunc odio erat, dapibus ac massa non, malesuada pharetra tellus.
-					</p>
+				<div class="current-blog wow">
+					<?php
+
+					$catid = get_category_by_slug( 'articles' );
+					$args = array(
+							'numberposts' => 6,
+							'offset' => 0,
+							'category' => $catid->term_id,
+							'orderby' => 'post_date',
+							'order' => 'DESC',
+							'post_type' => 'post',
+							'post_status' => 'publish',
+							'suppress_filters' => true );
+
+					$latest_blog = wp_get_recent_posts( $args, ARRAY_A );
+					foreach($latest_blog as $latest ){
+						$content = substr(strip_shortcodes(preg_replace('/<img[^>]+./','', wp_strip_all_tags($latest["post_content"], false))),0,200);
+						$thumb = get_the_post_thumbnail($latest["ID"], "large");
+						echo '<div class="post">'.
+								$thumb .
+								'<div class="post-text"><a href="' . get_permalink($latest["ID"]) . '"><h3>' .
+								$latest["post_title"].'</h3></a><p class="postdate">' .
+								mysql2date('F j, Y', $latest["post_date"]).'</p><p>' .
+								$content.'&hellip;</p><div class="readmore"><a href="' .
+								get_permalink($latest["ID"]) . '">Continue Reading</a></div></div></div>';
+					}
+					?>
 				</div>
 			</div>
 		</div>
@@ -173,13 +184,11 @@
 			</div>
 
 			<div class="social-icons">
-				<a href="https://www.facebook.com/moversmakersxyz"><span class="socicon socicon-facebook"></span></a>
-				<a href="https://twitter.com/moversmakersxyz"><span class="socicon socicon-twitter"></span></a>
-				<!--<a href="https://www.linkedin.com/in/><span class="socicon socicon-linkedin"></span></a>-->
-				<a href="https://google.com/+MoversandMakersXYZ"><span class="socicon socicon-google"></span></a>
-				<a href="https://www.youtube.com/channel/UCozq9mc4zdDvJlhaeqD4igQ"><span class="socicon socicon-youtube"></span></a>
-				<!--<a href=""><span class="socicon socicon-vimeo"></span></a>-->
-				<!--<a href=""><span class="socicon socicon-soundcloud"></span></a>-->
+				<a href="https://www.facebook.com/"><span class="socicon socicon-facebook"></span></a>
+				<a href="https://twitter.com/"><span class="socicon socicon-twitter"></span></a>
+				<a href="https://www.linkedin.com/in/"><span class="socicon socicon-linkedin"></span></a>
+				<a href="https://google.com/"><span class="socicon socicon-google"></span></a>
+				<a href="https://www.youtube.com/channel/"><span class="socicon socicon-youtube"></span></a>
 				<a href="rss"><span class="socicon socicon-rss"></span></a>
 			</div>
 
