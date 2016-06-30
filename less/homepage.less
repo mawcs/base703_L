@@ -314,6 +314,7 @@ body {
 						}
 						p{
 							text-align: justify;
+							min-height: 14em;
 						}
 					}
 
@@ -322,6 +323,19 @@ body {
 						width: 100%;
 						text-align: center;
 						align-self: flex-end;
+
+						.btn{
+							background-color: @altcolor;
+							color: @buttonbordercolor;
+							transition: background-color @mastheadtransitiontime, box-shadow @mastheadtransitiontime, transform  @mastheadtransitiontime;
+						}
+
+						.btn:hover{
+							background-color: lighten(@altcolor, 8%);
+							transition: background-color @mastheadtransitiontime, box-shadow @mastheadtransitiontime, transform  @mastheadtransitiontime;
+							transform: scale(1.02);
+							.z-depth(5);
+						}
 					}
 
 
@@ -389,9 +403,13 @@ body {
 							}
 
 							.readmore{
-								color: lighten(@linkcolor, 10%);
 								font-size: 0.9em;
 								text-align: right;
+
+								a{
+									color: lighten(@linkcolor, 10%);
+								}
+
 							}
 						}
 					}

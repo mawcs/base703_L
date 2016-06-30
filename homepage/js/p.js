@@ -272,6 +272,9 @@ $(function () {
 		phero(st);
 		stickmasthead(st);
 	});
+	var st = $(window).scrollTop();
+	phero(st);
+	stickmasthead(st);
 
 	initializeHomepageNavigation();
 
