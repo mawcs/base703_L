@@ -106,7 +106,7 @@
 						<h3>Athletes</h3>
 						<p>
 							Athletes need coaches, of course. But, sometimes, the kind of coaching you need is help in
-							living better lives. Mirus Edge can give you the tools you need to stay motivated and live a
+							living a better life. Mirus Edge can give you the tools you need to stay motivated and live a
 							quality life that helps on and off the field; in and out of the game.
 						</p>
 					</div>
