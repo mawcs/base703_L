@@ -202,10 +202,12 @@ body {
 					font-family: "Raleway", sans-serif;
 					border-color: @herocolor;
 					font-size: 2.8rem;
+					width: 100%;
 				}
 
 				.thecall{
 					padding-top: 2.3rem;
+					width: 100%;
 					border: 2px solid @maincolor;
 					border-left: 0;
 					border-right: 0;
@@ -243,6 +245,7 @@ body {
 					font-size: 1.3em;
 					font-weight: 300;
 					padding-top: 2.1rem;
+					width: 100%;
 
 					p{
 						margin: 0;
@@ -583,4 +586,21 @@ body {
 	
 }
 
+//Handle IE 11
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+	#homepage{
+
+		#hero{
+			z-index:0;
+			position: inherit;
+		}
+
+		#clientcall-block{
+			margin-top: 0;
+		}
+	}
+}
+
+//import the homepage responsive styles
 @import (less) "homepage_responsive";
