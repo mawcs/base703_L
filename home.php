@@ -73,7 +73,7 @@
 				</div>
 
 				<div class="herobuttons">
-					<a class="btn" href="choice">Yes! I'd Make the Choice</a>
+					<a class="btn" href="signup">Yes! I'd Make the Choice</a>
 				</div>
 			</div>
 		</div>
@@ -95,7 +95,7 @@
 						</p>
 					</div>
 					<div class="clientcall-item-action">
-						<button class="btn">Start Now</button>
+						<a class="btn" href="signup">Start Now</a>
 					</div>
 				</div>
 				<div class="clientcall-item">
@@ -111,7 +111,7 @@
 						</p>
 					</div>
 					<div class="clientcall-item-action">
-						<button class="btn">Start Now</button>
+						<a class="btn" href="signup">Start Now</a>
 					</div>
 				</div>
 				<div class="clientcall-item">
@@ -127,7 +127,7 @@
 						</p>
 					</div>
 					<div class="clientcall-item-action">
-						<button class="btn">Start Now</button>
+						<a class="btn" href="signup">Start Now</a>
 					</div>
 				</div>
 			</div>
