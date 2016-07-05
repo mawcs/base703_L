@@ -3584,3 +3584,6 @@ a:active {
 /*--------------------------------------------------------------
 # Media Queries and Responsiveness
 --------------------------------------------------------------*/
+.off-canvas-right.open {
+  background: #171e4e !important;
+}
