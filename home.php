@@ -184,11 +184,11 @@
 			</div>
 
 			<div class="social-icons">
-				<a href="https://www.facebook.com/"><span class="socicon socicon-facebook"></span></a>
-				<a href="https://twitter.com/"><span class="socicon socicon-twitter"></span></a>
-				<a href="https://www.linkedin.com/in/"><span class="socicon socicon-linkedin"></span></a>
-				<a href="https://google.com/"><span class="socicon socicon-google"></span></a>
-				<a href="https://www.youtube.com/channel/"><span class="socicon socicon-youtube"></span></a>
+				<a href="https://www.facebook.com/mirusedge/"><span class="socicon socicon-facebook"></span></a>
+				<a href="https://twitter.com/MirusEdge"><span class="socicon socicon-twitter"></span></a>
+				<a href="https://www.linkedin.com/in/laura-swearingen-88abb331"><span class="socicon socicon-linkedin"></span></a>
+				<a href="https://plus.google.com/b/100834870578691188845/100834870578691188845"><span class="socicon socicon-google"></span></a>
+				<a href="https://www.instagram.com/laura.mirusedge/"><span class="socicon socicon-instagram"></span></a>
 				<a href="rss"><span class="socicon socicon-rss"></span></a>
 			</div>
 
