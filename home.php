@@ -19,13 +19,13 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 	<script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/vend/wow.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/homepage/js/p.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/js/vend/wow.min.js"></script>
+	<script src="<?php echo get_stylesheet_directory_uri(); ?>/homepage/js/p.js"></script>
 
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/raleway.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/trirong.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/homepage/font/socicon.css">
-	<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/less/homepage.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/homepage/font/raleway.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/homepage/font/trirong.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/homepage/font/socicon.css">
+	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/less/homepage.css">
 
 	<?php wp_head(); ?>
 </head>
@@ -84,7 +84,7 @@
 			<div class="clientcall-content">
 				<div class="clientcall-item">
 					<div class="clientcall-item-image">
-						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/entrepreneur.jpg">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/homepage/img/entrepreneur.jpg">
 					</div>
 					<div class="clientcall-item-text">
 						<h3>Entrepreneurs</h3>
@@ -100,7 +100,7 @@
 				</div>
 				<div class="clientcall-item">
 					<div class="clientcall-item-image">
-						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/athlete.jpg">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/homepage/img/athlete.jpg">
 					</div>
 					<div class="clientcall-item-text">
 						<h3>Athletes</h3>
@@ -116,7 +116,7 @@
 				</div>
 				<div class="clientcall-item">
 					<div class="clientcall-item-image">
-						<img src="<?php bloginfo('template_directory'); ?>/homepage/img/businessperson.jpg">
+						<img src="<?php echo get_stylesheet_directory_uri(); ?>/homepage/img/businessperson.jpg">
 					</div>
 					<div class="clientcall-item-text">
 						<h3>Business People</h3>
